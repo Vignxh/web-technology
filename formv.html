@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>yamaha Bike Showroom Registration</title>
+    <script src="registration.js"></script>
+    <style>
+    
+            body {
+                background-image: url(royal.jfif);
+                background-repeat: no-repeat;
+                background-size: 65%;
+                font-family: 'Trebuchet MS';
+            }
+    </style>
+</head>
+
+<body>
+    
+
+    <h1 style="color:DodgerBlue;">Yamaha Showroom Registration</h1>
+    <form name="registrationForm" onsubmit="return validateForm()" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <span id="firstNameError" class="error"></span><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <span id="lastNameError" class="error"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <span id="passwordError" class="error"></span><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br>
+        <span id="confirmPasswordError" class="error"></span><br>
+
+        <input type="submit" value="Register">
+        
+    </form>
+</body>
+</html>
